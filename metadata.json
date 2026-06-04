@@ -1,0 +1,6 @@
+{
+  "name": "Vitality Health",
+  "description": "Daily performance dashboard application tracking health and activity metrics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

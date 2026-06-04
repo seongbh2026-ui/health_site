@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0b1326;
+  --color-surface: #171f33;
+  --color-surface-highest: #2d3449;
+  --color-surface-lowest: #060e20;
+  --color-primary: #57f1db;
+  --color-primary-container: #2dd4bf;
+  --color-on-primary: #003731;
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #bacac5;
+  --color-secondary: #bdc2ff;
+  --color-tertiary: #ffcdd1;
+  --color-error: #ffb4ab;
+  
+  --font-sans: "Manrope", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  @apply bg-background text-on-surface font-sans antialiased;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.chart-gradient {
+  background: linear-gradient(180deg, rgba(87, 241, 219, 0.2) 0%, rgba(87, 241, 219, 0) 100%);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
